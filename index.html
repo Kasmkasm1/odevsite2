@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğuş Otomotiv Clone</title>
+    <!-- FontAwesome İkonları -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Harici CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== SOL KAYAR MENÜ (OVERLAY) ===== -->
+    <div class="side-menu-overlay" id="sideMenuOverlay"></div>
+    
+    <div class="side-menu" id="sideMenu">
+        <div class="side-menu-header">
+            <div class="side-menu-logo">DOĞUŞ</div>
+            <div class="side-menu-close" id="sideMenuClose">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <nav class="side-menu-nav">
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="about.html">Hakkımızda</a></li>
+                <li><a href="brands.html">Markalar</a></li>
+                <li><a href="services.html">Hizmetler</a></li>
+                <li><a href="contact.html">İletişim</a></li>
+                <li><a href="career.html">Kariyer</a></li>
+            </ul>
+        </nav>
+        <div class="side-menu-footer">
+            <p>&copy; 2025 Doğuş Otomotiv</p>
+        </div>
+    </div>
+
+    <!-- ===== KIRMIZI SABİT UYARI ÇUBUĞU ===== -->
+    <div class="top-alert-bar">
+        <div class="alert-content">
+            <span class="alert-icon"><i class="fas fa-exclamation-circle"></i></span>
+            <span class="alert-text">Bu site Web tasarım dersi kapsamında oluşturulmuştur. Sitenin gerçek içeriği değildir.</span>
+            <span class="alert-close"><i class="fas fa-times"></i></span>
+        </div>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="header-left">
+            <span class="lang-switch">EN</span>
+            <i class="fas fa-bars menu-icon" id="menuToggle"></i>
+        </div>
+        <div class="logo">
+            <span class="logo-bold">DOĞUŞ</span>
+        </div>
+        <div class="header-right">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <div class="hero-wrapper">
+        
+        <!-- SOL KOLON (Ana Alan) -->
+        <main class="main-content">
+            
+            <!-- 1. Üstteki 2'li Grid -->
+            <div class="top-grid">
+                <a href="about.html" class="top-card-link">
+                    <div class="top-card">
+                        <img src="img-car1.jpg" alt="Manzara">
+                        <div class="overlay-text">Hakkımızda</div>
+                    </div>
+                </a>
+                <a href="electric.html" class="top-card-link">
+                    <div class="top-card">
+                        <img src="img-car2.jpg" alt="Araçlar">
+                        <div class="overlay-text">ELEKTRİKLİ & HİBRİT</div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 2. Büyük Slider Alanı -->
+            <div class="main-slider-container">
+                <div class="slider-nav-left">
+                    <div class="nav-box active-box">01</div>
+                    <div class="nav-box">02</div>
+                    <div class="nav-box">03</div>
+                </div>
+
+                <div class="slider-wrapper">
+                    <!-- Slayt 1 -->
+                    <div class="slide active">
+                        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80" alt="Slider 1">
+                        <div class="slide-content">
+                            <h1>DOĞUŞ OTOMOTİV'İ<br>TANIYIN!</h1>
+                            <a href="about.html" class="btn-circle-link"><div class="btn-circle">KEŞFET</div></a>
+                        </div>
+                    </div>
+                    <!-- Slayt 2 -->
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1200&q=80" alt="Slider 2">
+                        <div class="slide-content">
+                            <h1>YENİ NESİL<br>MOBİLİTE</h1>
+                            <a href="electric.html" class="btn-circle-link"><div class="btn-circle">İNCELE</div></a>
+                        </div>
+                    </div>
+                    <!-- Slayt 3 -->
+                    <div class="slide">
+                        <img src="img-car3.jpg" alt="Slider 3">
+                        <div class="slide-content">
+                            <h1>DOĞAYLA<br>UYUM</h1>
+                            <a href="sustainability.html" class="btn-circle-link"><div class="btn-circle">DEVAM</div></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <span class="slider-dot active-dot">01</span>
+                    <span class="slider-dot">02</span>
+                    <span class="slider-dot">03</span>
+                </div>
+            </div>
+        </main>
+
+        <!-- SAĞ KOLON (Sidebar) -->
+        <aside class="sidebar">
+            
+            <!-- 1. VİDEO KUTUSU -->
+            <a href="videos.html" class="side-link">
+                <div class="side-video-box" id="videoTrigger">
+                    <div class="video-label">VİDEOLAR</div>
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=400&q=80" alt="Video">
+                    <div class="play-icon"><i class="fas fa-play"></i></div>
+                </div>
+            </a>
+
+            <!-- 2. RAPOR KUTUSU (DUYURU) -->
+<a href="report.html" class="side-link">
+    <div class="side-report-box" id="reportTrigger">
+        <div class="report-label">DUYURU</div>
+        <h3>FAALİYET RAPORU</h3>
+        <div class="report-year">2025</div>
+        <div class="report-link">DEVAMINI OKU</div>
+    </div>
+</a>
+
+            <!-- 3. SOSYAL MEDYA -->
+            <div class="side-social">
+                <div class="social-text">BİZİ TAKİP EDİN</div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <!-- 4. İLETİŞİM -->
+            <a href="contact.html" class="side-link">
+                <div class="side-contact" id="contactTrigger">
+                    <strong>İLETİŞİM</strong>
+                    <p>TEL: <a href="tel:02226769090" style="color:#555; text-decoration:underline;">0222 676 90 90</a></p>
+                    <p>ADRES: ŞEKERPİNAR MAH. ANADOLU CAD.</p>
+                    <p>NO: 45 D, PK: 41420 ÇAYIROVA/KOCAELİ</p>
+                </div>
+            </a>
+        </aside>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="footer-left">
+            &copy; 2016 Doğuş Otomotiv Servis ve Ticaret A.Ş. Tüm Hakları Saklıdır.
+        </div>
+        <div class="footer-links">
+            <a href="#">Site Haritası</a>
+            <a href="#">Çerez Politikası</a>
+            <a href="#">Bilgi Toplama Hizmetleri</a>
+            <a href="#">İletişim Şartları</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
